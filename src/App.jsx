@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import MainLayout from './MainLayout'
 import Home from './ui/Home'
 import AboutUs from './ui/AboutUs'
@@ -17,7 +17,7 @@ import Locations from './ui/Locations'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
@@ -35,6 +35,6 @@ export default function App() {
           <Route path="ContactUs" element={<ContactUs />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </>
   )
 }

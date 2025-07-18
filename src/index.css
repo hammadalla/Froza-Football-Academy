@@ -1,0 +1,35 @@
+:root {
+    --Blue-color: #1D4880;
+    --sharpBlue-color: #172135;
+    --white-color: #fff;
+}
+
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('font/Oswald-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Oswald-Bold-light';
+    src: url('font/Oswald-Light.ttf');
+}
+
+p, li , h5 , h4  {
+    font-family: 'Oswald-Bold-light';
+}
+
+body {
+    font-family: 'Oswald-Bold';
+    font-weight: 700;
+}
+
+.text-primary {
+    color: #1D4880 !important;
+}
+
+
+.outlined-text {
+    font-size: 4rem !important;
+    color: #000;
+}

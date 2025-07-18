@@ -1,0 +1,40 @@
+ .ripple-animation {
+          animation: ripple 6s infinite ease-in-out;
+        }
+        .delay-1s {
+          animation-delay: 1s;
+        }
+        .delay-500ms {
+          animation-delay: 0.5s;
+        }
+        @keyframes ripple {
+          0%, 100% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.2); opacity: 0.5; }
+        }
+
+        .fade-in {
+          animation: fadeIn 1s ease-in-out both;
+        }
+
+        .scale-in {
+          animation: scaleIn 0.7s ease-out both;
+        }
+
+        .animate-bounce {
+          animation: bounce 2s infinite;
+        }
+
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes scaleIn {
+          from { opacity: 0; transform: scale(0.95); }
+          to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }

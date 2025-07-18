@@ -1,0 +1,57 @@
+.booking-button {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    box-shadow: 0px 0px 10px #00000050;
+    z-index: 99;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+
+
+.header {
+    background-color: #043069;
+    padding: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.header h3 {
+    font-size: 15px;
+    color: #fff;
+}
+
+.Body h4 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Body {
+    background-color: #fff;
+    padding: 10px 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.Body a {
+    text-decoration: none;
+    background-color: #043069;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+}

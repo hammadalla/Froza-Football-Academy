@@ -1,0 +1,19 @@
+.logo-footer {
+    width: 100px;
+}
+
+.footer {
+    background: linear-gradient(to bottom, #172135 2% , #0c356bf0), url(../../assets/school_slider.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 5rem ;
+    padding-bottom: 1rem ;
+}
+
+
+
+.copyright {
+    font-size: 12px;
+}

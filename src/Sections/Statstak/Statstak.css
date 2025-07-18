@@ -1,0 +1,112 @@
+.statstak-bg {
+    /* background: linear-gradient(to top, #0d479286, #030303), url(../../assets/home_inner_01.jpg); */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px 0 0 0;
+    position: relative;
+    background: linear-gradient(to top, #0d479286, #030303)
+}
+
+.statstak-bg::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url(../../assets/white_top_wave_02.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 100px;
+}
+
+.statstak-bg::before {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    background-image: url(../../assets/white_bottom_wave_03.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.statstak-bg h5 {
+    color: #fff;
+}
+
+.astastakIcon {
+    border: 5px solid #172135;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+
+.astatsak-card {
+    background: #fff;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    box-shadow: -4px 4px 4px #00000060;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.astatsak-card:hover {
+    -webkit-transform: rotateX(20deg);
+    -moz-transform: rotateX(20deg);
+    -ms-transform: rotateX(20deg);
+    -o-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+}
+
+.astatsak-card::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../assets/footer-bg.png);
+    background-size: contain;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.astatsak-card h5 {
+    color: #000;
+    font-size: 30px;
+}
+
+@media (max-width: 992px) {
+    .statstak-bg::after {
+        width: 100%;
+        height: 130px;
+    }
+
+    .statstak-bg::before {
+        bottom: -10px;
+        width: 100%;
+        height: 100%;
+    }
+
+}

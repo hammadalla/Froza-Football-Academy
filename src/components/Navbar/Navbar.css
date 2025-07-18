@@ -1,0 +1,113 @@
+.logo {
+    width: 120px;
+}
+
+.logo-small {
+    width: 80px;
+}
+
+.navbar {
+    background-image: url(../../assets/grey_top_wave_01.png);
+    background-position: 100% 100%;
+    background-size: cover; 
+    background-color: #1d4790;
+    padding: 0 !important;
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: var(--white-color);
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    border-bottom: 2px solid transparent;
+    margin-top: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px 20px !important;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.nav-link:hover {
+    color: #172135;
+    background-color: #fff;
+    padding: 15px 20px !important;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.nav-link.active {
+    color: #1D4880 !important;
+    background-color: #fff;
+    padding: 15px 30px !important;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+@media (max-width: 992px) {
+    .nav-link.active {
+        clip-path: unset;
+        border: 1px solid var(--white-color);
+    }
+
+    .nav-link {
+        clip-path: unset;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: inline-block;
+        margin: 7px 0;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .navbar {
+        background: linear-gradient(to left, #71a0f1, #1D4890);
+    }
+}
+
+.dropdown-menu {
+    padding: 20px 5px;
+    -webkit-animation: Fade 1s alternate;
+    animation: Fade 1s alternate;
+}
+
+@keyframes Fade {
+    0% {
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+
+    100% {
+        -webkit-transform: translateY(-12px);
+        -moz-transform: translateY(-12px);
+        -ms-transform: translateY(-12px);
+        -o-transform: translateY(-12px);
+        transform: translateY(-12px);
+        opacity: 1;
+    }
+}

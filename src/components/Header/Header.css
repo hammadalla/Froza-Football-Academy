@@ -1,0 +1,53 @@
+.Email {
+    color: #1D4890;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.headerEmail strong{
+    font-size: 18px;
+}
+
+.socilaIcon {
+    color: #fff;
+    background-color: #1D4890;
+    box-shadow: 0px 0px 4px #fff;
+    padding: 10px 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.bg-header {
+    background-color: #F4F2F1;
+}
+
+@media (max-width: 992px) {
+    .headerEmail strong {
+        display: none;
+    }
+
+    .Email {
+        color: #1d4790;
+    }
+
+    .bg-header {
+        background-image: unset;
+        background-position: 10% 100%;
+        padding: 10px 0 !important;
+        border-bottom: 1px solid #F3B213;
+        background-color: #ffffff;
+    }
+
+    .socilaIcon {
+        margin: 0px 0 !important;
+        box-shadow: 0px 0px 4px #F3B213;
+    }
+}

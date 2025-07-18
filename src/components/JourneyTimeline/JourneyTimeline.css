@@ -1,0 +1,162 @@
+
+.timeline-step {
+    position: relative;
+    padding-left: 2rem;
+    animation: fadeUp 0.6s ease forwards;
+    opacity: 0;
+    -webkit-animation: fadeUp 0.6s ease forwards;
+}
+
+.timeline-step:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+.timeline-step:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+.circle {
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #16375f;
+    border-radius: 50%;
+    color: #16375f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.text-color {
+    color: #1D4880;
+    font-weight: 700;
+}
+
+.timeline-step {
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-box {
+    width: 55px;
+    height: 55px;
+    color: #fff;
+    background-color: #16375f;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 30px;
+}
+
+.timeline-step:nth-child(even) {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+.journey-section {
+    background-color: #1D4880;
+    /* لون الهوية */
+    color: white;
+}
+
+.outlined-text {
+    color: white;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.timeline-step .text-color {
+    color: #fff;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.branch-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 72, 128, 0.85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.image-container:hover .branch-overlay {
+    opacity: 1;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #1D4880;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #f0f0f0;
+}
+
+/* .journey-section {
+    background-color: #f9f9f9;
+} */
+
+.text-forza {
+    color: #fff;
+    font-size: 60px;
+}
+
+.text-card {
+    color: #1D4880;
+}
+
+.journey-step {
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+.branch {
+    background-image: url(../../assets/shape-6.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-card {
+    font-weight: bold;
+    text-transform: uppercase;
+}

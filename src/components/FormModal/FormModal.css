@@ -1,0 +1,32 @@
+.modal-title {
+    color: #1D4880;
+    font-weight: 800;
+}
+
+.modal-header {
+    border: 0 !important;
+    box-shadow: 0 0 0 0 transparent !important;
+}
+
+.modal-content {
+    box-shadow: 0 0 0 0 transparent !important;
+    background-color: transparent !important
+}
+
+.modal-body {
+    padding: 0 !important;
+}
+
+.bg-form input , 
+.bg-form textarea {
+    background-color: #fff;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.modal-body .form-control {
+    height: unset !important;
+}
